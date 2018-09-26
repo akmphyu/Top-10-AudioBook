@@ -12,6 +12,10 @@
 		8069943F215C157100B5BEE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8069943D215C157100B5BEE0 /* Main.storyboard */; };
 		80699441215C157300B5BEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80699440215C157300B5BEE0 /* Assets.xcassets */; };
 		80699444215C157300B5BEE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80699442215C157300B5BEE0 /* LaunchScreen.storyboard */; };
+		8069944F215C16D600B5BEE0 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8069944E215C16D600B5BEE0 /* PhotoCell.swift */; };
+		80699451215C1C7900B5BEE0 /* Audiobook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80699450215C1C7900B5BEE0 /* Audiobook.swift */; };
+		80699453215C228400B5BEE0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80699452215C228400B5BEE0 /* APIClient.swift */; };
+		80699456215C24E300B5BEE0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80699455215C24E300B5BEE0 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		80699440215C157300B5BEE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80699443215C157300B5BEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80699445215C157300B5BEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8069944E215C16D600B5BEE0 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		80699450215C1C7900B5BEE0 /* Audiobook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audiobook.swift; sourceTree = "<group>"; };
+		80699452215C228400B5BEE0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		80699455215C24E300B5BEE0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		80699438215C157100B5BEE0 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				80699454215C24D500B5BEE0 /* Utilities */,
+				8069944D215C16BB00B5BEE0 /* Model */,
+				8069944C215C16B700B5BEE0 /* View */,
+				8069944B215C16AA00B5BEE0 /* Controller */,
 				80699439215C157100B5BEE0 /* AppDelegate.swift */,
-				8069943B215C157100B5BEE0 /* ViewController.swift */,
 				8069943D215C157100B5BEE0 /* Main.storyboard */,
 				80699440215C157300B5BEE0 /* Assets.xcassets */,
 				80699442215C157300B5BEE0 /* LaunchScreen.storyboard */,
 				80699445215C157300B5BEE0 /* Info.plist */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		8069944B215C16AA00B5BEE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8069943B215C157100B5BEE0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8069944C215C16B700B5BEE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8069944E215C16D600B5BEE0 /* PhotoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8069944D215C16BB00B5BEE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80699450215C1C7900B5BEE0 /* Audiobook.swift */,
+				80699452215C228400B5BEE0 /* APIClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80699454215C24D500B5BEE0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				80699455215C24E300B5BEE0 /* DataService.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8069943C215C157100B5BEE0 /* ViewController.swift in Sources */,
+				8069944F215C16D600B5BEE0 /* PhotoCell.swift in Sources */,
 				8069943A215C157100B5BEE0 /* AppDelegate.swift in Sources */,
+				80699456215C24E300B5BEE0 /* DataService.swift in Sources */,
+				80699453215C228400B5BEE0 /* APIClient.swift in Sources */,
+				80699451215C1C7900B5BEE0 /* Audiobook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
